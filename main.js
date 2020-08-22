@@ -15,5 +15,11 @@ function getExpiryDate(startDate, noOfDaysToAdd, count) {
 let startDate = new Date(); // Current date
 let endDate = "", noOfDaysToAdd = 10, count = 0; // Variable declaration
 
+
+document.getElementById('cuurentDate').textContent = startDate;
+document.getElementById('noOfDays').textContent = noOfDaysToAdd;
+
 const expiryDate = getExpiryDate(startDate, noOfDaysToAdd, count); // Call getExpiryDate function
-console.log(expiryDate); // display result in console
+
+//show results in DOM
+document.getElementById('futureDate').textContent = expiryDate;
